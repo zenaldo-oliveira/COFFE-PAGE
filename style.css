@@ -2,6 +2,7 @@
     --main-color: #d3ad7f;
     --black: #13131a;
     --bg: #010103;
+    --white: #ffffff;
     --border: 0.1rem solid rgba(255,255,255,0.3);
     font-size: 10px;
 }
@@ -49,7 +50,7 @@ section {
 .navbar a {
     margin: 0 1rem;
     font-size: 1.8rem;
-    color: #fff;
+    color:var(--white);
 }
 
 .navbar a:hover {
@@ -71,13 +72,14 @@ section {
 
 .btn {
     background: var(--main-color);
-    color: #fff;
+    color: var(--white);
     padding: 1rem 3rem;
     font-size: 1.7rem;
     cursor: pointer;
     margin-top: 1rem;
     display: inline-block;
-    border-radius: 6px;
+    border-radius: 30px;
+    
 }
 
 .btn:hover {
@@ -101,12 +103,12 @@ section {
 }
 
 .content h3 {
-    color: #fff;
+    color: var(--white);
     font-size: 6rem;
 }
 
 .content p {
-    color: #fff;
+    color:var(--white);
     font-size: 2rem;
     font-weight: 10;
     line-height: 1.8;
@@ -122,7 +124,7 @@ section {
 }
 
 .title span {
-    color: #fff;
+    color: var(--white);
     text-transform: uppercase;
 }
 
@@ -139,12 +141,12 @@ section {
 
 .about .row .content h3 {
     font-size: 3rem;
-    color: #fff;
+    color: var(--white);
 }
 
 .about .row .content p {
     font-size: 1.6rem;
-    color: #fff;
+    color: var(--white);
     padding: 1rem 0;
     line-height: 1.8;
 }
@@ -167,19 +169,19 @@ section {
 }
 
 .menu .box-container .box h3 {
-    color: #fff;
+    color: var(--white);
     font-size: 2rem;
     padding: 1rem 0;
 }
 
 .menu .box-container .box .price {
-    color: #fff;
+    color: var(--white);
     font-size: 2.5rem;
     padding: 0.5rem 0;
 }
 
 .menu .box-container .box:hover {
-    background-color: #fff;
+    background-color: var(--white);
 }
 
 .menu .box-container .box:hover>* {
@@ -194,14 +196,14 @@ section {
 
 .review .box-container .box p {
     font-size: 1.5rem;
-    color: #fff;
+    color: var(--white);
     padding: 2rem 0;
     line-height: 1.8;
     font-weight: lighter;
 }
 
 .review .box-container .box h3 {
-    color: #fff;
+    color: var(--white);
     font-size: 2rem;
     margin: 1rem 0;
 }
@@ -216,6 +218,25 @@ section {
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer .share {
+    padding: 1rem 0;
+}
+
+.footer .share img {
+    margin: 0.3rem;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 1rem;
+
+}
+.footer .share img:hover {
+    background-color: var(--main-color);
 }
 
 .contacts {
@@ -235,11 +256,9 @@ section {
     width: 5rem;
 }
 
-.contacts .share img:hover {
-    background-color: var(--main-color);
-}
 
-@media screen and (max-width: 540px) {
+
+@media screen and (max-width: 500px) {
     .navbar {
         display: none;
     }
